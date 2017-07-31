@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Penggajian", "Penggajian\Penggajian.vbproj", "{089536E8-018D-4453-ADD0-EEE74AC399E5}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Penggajian", "Penggajian\Penggajian.vbproj", "{095936C3-CB93-4FB5-AF87-E1934BFE5070}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{089536E8-018D-4453-ADD0-EEE74AC399E5}.Debug|x86.ActiveCfg = Debug|x86
-		{089536E8-018D-4453-ADD0-EEE74AC399E5}.Debug|x86.Build.0 = Debug|x86
-		{089536E8-018D-4453-ADD0-EEE74AC399E5}.Release|x86.ActiveCfg = Release|x86
-		{089536E8-018D-4453-ADD0-EEE74AC399E5}.Release|x86.Build.0 = Release|x86
+		{095936C3-CB93-4FB5-AF87-E1934BFE5070}.Debug|x86.ActiveCfg = Debug|x86
+		{095936C3-CB93-4FB5-AF87-E1934BFE5070}.Debug|x86.Build.0 = Debug|x86
+		{095936C3-CB93-4FB5-AF87-E1934BFE5070}.Release|x86.ActiveCfg = Release|x86
+		{095936C3-CB93-4FB5-AF87-E1934BFE5070}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{089536E8-018D-4453-ADD0-EEE74AC399E5}</ProjectGuid>
+    <ProjectGuid>{095936C3-CB93-4FB5-AF87-E1934BFE5070}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>Penggajian.My.MyApplication</StartupObject>
     <RootNamespace>Penggajian</RootNamespace>
