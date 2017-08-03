@@ -6,7 +6,219 @@ Penggajian
 </name>
 </assembly>
 <members>
-<member name="P:Penggajian.My.Resources.Resources.ResourceManager">
+<member name="T:Penggajian.dbPenggajianDataSet.KaryawanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PenggajianMasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PotonganDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PotonganDetilDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganDetilDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.JabatanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.GridKaryawanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.HakDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.KewajibanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.gridHakTunjanganDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.KaryawanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PenggajianMasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PotonganRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PotonganDetilRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganDetilRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.JabatanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.GridKaryawanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.HakRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.KewajibanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.gridHakTunjanganRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.KaryawanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PenggajianMasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PotonganRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PotonganDetilRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganDetilRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.JabatanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.GridKaryawanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.HakRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.KewajibanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.gridHakTunjanganRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.KaryawanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.PenggajianMasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.PotonganTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.PotonganDetilTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.TunjanganTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.TunjanganDetilTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.JabatanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.GridKaryawanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.HakTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.KewajibanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.gridHakTunjanganTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Penggajian.dbPenggajianDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Penggajian.dbPenggajianDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Penggajian.dbPenggajianDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Penggajian.dbPenggajianDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Penggajian.dbPenggajianDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Penggajian.dbPenggajianDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Penggajian.dbPenggajianDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Penggajian.dbPenggajianDataSetTableAdapters.TableAdapterManager.UpdateAll(Penggajian.dbPenggajianDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:Penggajian.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>

@@ -1,8 +1,43 @@
-C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\bin\Debug\Penggajian.exe
-C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\bin\Debug\Penggajian.pdb
-C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\bin\Debug\Penggajian.xml
-C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.Resources.resources
-C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.vbproj.GenerateResource.Cache
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\bin\Debug\Penggajian.exe.config
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.AboutBox.resources
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.Barang.resources
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.Karyawan.resources
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.LoginForm.resources
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.MenuUtama.resources
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.Resources.resources
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.SplashScreen.resources
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.SumJml.resources
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.vbproj.GenerateResource.Cache
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\bin\Debug\Penggajian.exe
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\bin\Debug\Penggajian.pdb
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\bin\Debug\Penggajian.xml
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.exe
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.xml
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.pdb
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.Gapok.resources
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.Bagians.resources
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.dataGaji.resources
+C:\Users\User21\Dropbox\Program-desktop\Penggajian\Penggajian\bin\Debug\Penggajian.exe.config
+C:\Users\User21\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.exe
+C:\Users\User21\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.xml
+C:\Users\User21\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.pdb
+C:\Users\za2ng2509\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.Persens.resources
+C:\Users\Jajang Nurjaman\Dropbox\Program-desktop\Penggajian\Penggajian\bin\Debug\Penggajian.exe.config
+C:\Users\Jajang Nurjaman\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.exe
+C:\Users\Jajang Nurjaman\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.xml
+C:\Users\Jajang Nurjaman\Dropbox\Program-desktop\Penggajian\Penggajian\obj\x86\Debug\Penggajian.pdb
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\bin\Debug\Penggajian.exe.config
 C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.exe
 C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.xml
 C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.pdb
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.AboutBox.resources
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.Karyawan.resources
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.LoginForm.resources
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.MenuUtama.resources
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.Resources.resources
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.SplashScreen.resources
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.vbproj.GenerateResource.Cache
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\bin\Debug\Penggajian.exe
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\bin\Debug\Penggajian.pdb
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\bin\Debug\Penggajian.xml
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.FGaji.resources
