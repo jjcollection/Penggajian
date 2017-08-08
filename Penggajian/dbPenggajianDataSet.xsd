@@ -565,7 +565,7 @@ WHERE        (idPenggajianMaster = ?) AND (idKaryawan = ?)</CommandText>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        Karyawan.idKaryawan, Karyawan.namaKaryawan, Karyawan.Telp, Karyawan.alamat, Karyawan.idJabatan, Jabatan.namaJabatan, PenggajianMaster.idPenggajianMaster, PenggajianMaster.jmlKehadiran, Karyawan.gajiPokok, 
-                         PenggajianMaster.totalTunjangan, PenggajianMaster.totalPotongan, PenggajianMaster.GajiPokok AS TotalGaji
+                         PenggajianMaster.totalTunjangan, PenggajianMaster.totalPotongan, Karyawan.gajiPokok + PenggajianMaster.totalTunjangan - PenggajianMaster.totalPotongan AS TotalGaji
 FROM            ((Karyawan INNER JOIN
                          Jabatan ON Karyawan.idJabatan = Jabatan.idJabatan) INNER JOIN
                          PenggajianMaster ON Karyawan.idKaryawan = PenggajianMaster.idKaryawan)
@@ -590,11 +590,24 @@ ORDER BY Karyawan.namaKaryawan</CommandText>
               <Mapping SourceColumn="TotalGaji" DataSetColumn="TotalGaji" />
             </Mappings>
             <Sources>
+              <DbSource ConnectionRef="dbPenggajianConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Karyawan.idKaryawan, Karyawan.namaKaryawan, Karyawan.Telp, Karyawan.alamat, Karyawan.idJabatan, Jabatan.namaJabatan, PenggajianMaster.idPenggajianMaster, PenggajianMaster.jmlKehadiran, Karyawan.gajiPokok, 
+                         PenggajianMaster.totalTunjangan, PenggajianMaster.totalPotongan, Karyawan.gajiPokok + PenggajianMaster.totalTunjangan - PenggajianMaster.totalPotongan AS TotalGaji
+FROM            ((Karyawan INNER JOIN
+                         Jabatan ON Karyawan.idJabatan = Jabatan.idJabatan) INNER JOIN
+                         PenggajianMaster ON Karyawan.idKaryawan = PenggajianMaster.idKaryawan)
+ORDER BY Karyawan.namaKaryawan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
               <DbSource ConnectionRef="dbPenggajianConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByPeriode" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByPeriode" GeneratorSourceName="FillByPeriode" GetMethodModifier="Public" GetMethodName="GetDataByPeriode" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByPeriode" UserSourceName="FillByPeriode">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        Karyawan.idKaryawan, Karyawan.namaKaryawan, Karyawan.Telp, Karyawan.alamat, Karyawan.idJabatan, Jabatan.namaJabatan, PenggajianMaster.idPenggajianMaster, PenggajianMaster.jmlKehadiran, Karyawan.gajiPokok, 
-                         PenggajianMaster.totalTunjangan, PenggajianMaster.totalPotongan, PenggajianMaster.GajiPokok AS TotalGaji, PenggajianMaster.idPeriode
+                         PenggajianMaster.totalTunjangan, PenggajianMaster.totalPotongan, Karyawan.gajiPokok + PenggajianMaster.totalTunjangan - PenggajianMaster.totalPotongan AS TotalGaji, PenggajianMaster.idPeriode
 FROM            ((Karyawan INNER JOIN
                          Jabatan ON Karyawan.idJabatan = Jabatan.idJabatan) INNER JOIN
                          PenggajianMaster ON Karyawan.idKaryawan = PenggajianMaster.idKaryawan)
