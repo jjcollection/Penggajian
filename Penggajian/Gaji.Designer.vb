@@ -23,43 +23,56 @@ Partial Class FGaji
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GridKaryawanDataGridView = New System.Windows.Forms.DataGridView()
-        Me.GridKaryawanBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DbPenggajianDataSet = New Penggajian.dbPenggajianDataSet()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.GridHakTunjanganDataGridView = New System.Windows.Forms.DataGridView()
-        Me.statusHak = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.NamaTunjanganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BesarTunjanganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Penambahan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ubah = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.GridHakTunjanganBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.tanggalPeriode = New System.Windows.Forms.DateTimePicker()
         Me.BtnCari = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.StatusKewajibanDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.NamaPotonganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BesarPotonganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewButtonColumn1 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.GridKewajibanPotonganBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbTunjangan = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lbPotongan = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtPeriode = New System.Windows.Forms.TextBox()
+        Me.rdPeriode = New System.Windows.Forms.RadioButton()
+        Me.rdTanggal = New System.Windows.Forms.RadioButton()
+        Me.cariPeriode = New System.Windows.Forms.DateTimePicker()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.idPenggajianMaster = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalGaji = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.kehadiran = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GridKewajibanPotonganBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DbPenggajianDataSet = New Penggajian.dbPenggajianDataSet()
+        Me.GridHakTunjanganBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.IdKaryawanDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaKaryawanDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaJabatanDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GajiPokokDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalTunjanganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalPotonganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JmlKehadiranDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GridKaryawanBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GridHakTunjanganTableAdapter = New Penggajian.dbPenggajianDataSetTableAdapters.gridHakTunjanganTableAdapter()
         Me.GridKewajibanPotonganTableAdapter = New Penggajian.dbPenggajianDataSetTableAdapters.GridKewajibanPotonganTableAdapter()
         Me.GridKaryawanTableAdapter = New Penggajian.dbPenggajianDataSetTableAdapters.GridKaryawanTableAdapter()
@@ -74,45 +87,34 @@ Partial Class FGaji
         Me.PeriodeTableAdapter = New Penggajian.dbPenggajianDataSetTableAdapters.PeriodeTableAdapter()
         Me.KaryawanBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.KaryawanTableAdapter = New Penggajian.dbPenggajianDataSetTableAdapters.KaryawanTableAdapter()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txtPeriode = New System.Windows.Forms.TextBox()
-        Me.rdPeriode = New System.Windows.Forms.RadioButton()
-        Me.rdTanggal = New System.Windows.Forms.RadioButton()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.idPenggajianMaster = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IdKaryawanDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NamaKaryawanDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NamaJabatanDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GajiPokokDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalTunjanganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalPotonganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalGaji = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JmlKehadiranDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.kehadiran = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.statusHak = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.NamaTunjanganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BesarTunjanganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Penambahan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ubah = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.StatusKewajibanDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.NamaPotonganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BesarPotonganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewButtonColumn1 = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.GridKaryawanDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridKaryawanBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DbPenggajianDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridHakTunjanganDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridHakTunjanganBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridKewajibanPotonganBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        CType(Me.GridKewajibanPotonganBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DbPenggajianDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridHakTunjanganBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridKaryawanBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PenggajianMasterBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TunjanganBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PotonganBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PeriodeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KaryawanBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button3
@@ -143,16 +145,6 @@ Partial Class FGaji
         Me.GridKaryawanDataGridView.Size = New System.Drawing.Size(932, 536)
         Me.GridKaryawanDataGridView.TabIndex = 28
         '
-        'GridKaryawanBindingSource
-        '
-        Me.GridKaryawanBindingSource.DataMember = "GridKaryawan"
-        Me.GridKaryawanBindingSource.DataSource = Me.DbPenggajianDataSet
-        '
-        'DbPenggajianDataSet
-        '
-        Me.DbPenggajianDataSet.DataSetName = "dbPenggajianDataSet"
-        Me.DbPenggajianDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -180,58 +172,6 @@ Partial Class FGaji
         Me.GridHakTunjanganDataGridView.ReadOnly = True
         Me.GridHakTunjanganDataGridView.Size = New System.Drawing.Size(402, 191)
         Me.GridHakTunjanganDataGridView.TabIndex = 37
-        '
-        'statusHak
-        '
-        Me.statusHak.DataPropertyName = "statusHak"
-        Me.statusHak.HeaderText = ""
-        Me.statusHak.Name = "statusHak"
-        Me.statusHak.ReadOnly = True
-        Me.statusHak.Width = 30
-        '
-        'NamaTunjanganDataGridViewTextBoxColumn
-        '
-        Me.NamaTunjanganDataGridViewTextBoxColumn.DataPropertyName = "namaTunjangan"
-        Me.NamaTunjanganDataGridViewTextBoxColumn.HeaderText = "Tunjangan"
-        Me.NamaTunjanganDataGridViewTextBoxColumn.Name = "NamaTunjanganDataGridViewTextBoxColumn"
-        Me.NamaTunjanganDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'BesarTunjanganDataGridViewTextBoxColumn
-        '
-        Me.BesarTunjanganDataGridViewTextBoxColumn.DataPropertyName = "besarTunjangan"
-        Me.BesarTunjanganDataGridViewTextBoxColumn.HeaderText = "Nominal"
-        Me.BesarTunjanganDataGridViewTextBoxColumn.Name = "BesarTunjanganDataGridViewTextBoxColumn"
-        Me.BesarTunjanganDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'Penambahan
-        '
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle9.Format = "C2"
-        DataGridViewCellStyle9.NullValue = "0"
-        Me.Penambahan.DefaultCellStyle = DataGridViewCellStyle9
-        Me.Penambahan.HeaderText = "Tambah"
-        Me.Penambahan.Name = "Penambahan"
-        Me.Penambahan.ReadOnly = True
-        '
-        'ubah
-        '
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Showcard Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.NullValue = "+"
-        Me.ubah.DefaultCellStyle = DataGridViewCellStyle10
-        Me.ubah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ubah.HeaderText = "Aksi"
-        Me.ubah.Name = "ubah"
-        Me.ubah.ReadOnly = True
-        Me.ubah.Text = "Update"
-        Me.ubah.Width = 50
-        '
-        'GridHakTunjanganBindingSource
-        '
-        Me.GridHakTunjanganBindingSource.DataMember = "gridHakTunjangan"
-        Me.GridHakTunjanganBindingSource.DataSource = Me.DbPenggajianDataSet
         '
         'tanggalPeriode
         '
@@ -270,58 +210,6 @@ Partial Class FGaji
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(402, 193)
         Me.DataGridView1.TabIndex = 37
-        '
-        'StatusKewajibanDataGridViewCheckBoxColumn
-        '
-        Me.StatusKewajibanDataGridViewCheckBoxColumn.DataPropertyName = "statusKewajiban"
-        Me.StatusKewajibanDataGridViewCheckBoxColumn.HeaderText = ""
-        Me.StatusKewajibanDataGridViewCheckBoxColumn.Name = "StatusKewajibanDataGridViewCheckBoxColumn"
-        Me.StatusKewajibanDataGridViewCheckBoxColumn.ReadOnly = True
-        Me.StatusKewajibanDataGridViewCheckBoxColumn.Width = 30
-        '
-        'NamaPotonganDataGridViewTextBoxColumn
-        '
-        Me.NamaPotonganDataGridViewTextBoxColumn.DataPropertyName = "namaPotongan"
-        Me.NamaPotonganDataGridViewTextBoxColumn.HeaderText = "Potongan"
-        Me.NamaPotonganDataGridViewTextBoxColumn.Name = "NamaPotonganDataGridViewTextBoxColumn"
-        Me.NamaPotonganDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'BesarPotonganDataGridViewTextBoxColumn
-        '
-        Me.BesarPotonganDataGridViewTextBoxColumn.DataPropertyName = "besarPotongan"
-        Me.BesarPotonganDataGridViewTextBoxColumn.HeaderText = "Nominal"
-        Me.BesarPotonganDataGridViewTextBoxColumn.Name = "BesarPotonganDataGridViewTextBoxColumn"
-        Me.BesarPotonganDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle11.Format = "C2"
-        DataGridViewCellStyle11.NullValue = "0"
-        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle11
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Kurangi"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.ReadOnly = True
-        '
-        'DataGridViewButtonColumn1
-        '
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Showcard Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.NullValue = "+"
-        Me.DataGridViewButtonColumn1.DefaultCellStyle = DataGridViewCellStyle12
-        Me.DataGridViewButtonColumn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.DataGridViewButtonColumn1.HeaderText = "Aksi"
-        Me.DataGridViewButtonColumn1.Name = "DataGridViewButtonColumn1"
-        Me.DataGridViewButtonColumn1.ReadOnly = True
-        Me.DataGridViewButtonColumn1.Text = "Update"
-        Me.DataGridViewButtonColumn1.Width = 50
-        '
-        'GridKewajibanPotonganBindingSource
-        '
-        Me.GridKewajibanPotonganBindingSource.DataMember = "GridKewajibanPotongan"
-        Me.GridKewajibanPotonganBindingSource.DataSource = Me.DbPenggajianDataSet
         '
         'Panel1
         '
@@ -369,84 +257,12 @@ Partial Class FGaji
         Me.lbPotongan.Text = "0"
         Me.lbPotongan.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'GridHakTunjanganTableAdapter
-        '
-        Me.GridHakTunjanganTableAdapter.ClearBeforeFill = True
-        '
-        'GridKewajibanPotonganTableAdapter
-        '
-        Me.GridKewajibanPotonganTableAdapter.ClearBeforeFill = True
-        '
-        'GridKaryawanTableAdapter
-        '
-        Me.GridKaryawanTableAdapter.ClearBeforeFill = True
-        '
-        'PenggajianMasterBindingSource
-        '
-        Me.PenggajianMasterBindingSource.DataMember = "PenggajianMaster"
-        Me.PenggajianMasterBindingSource.DataSource = Me.DbPenggajianDataSet
-        '
-        'PenggajianMasterTableAdapter
-        '
-        Me.PenggajianMasterTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.HakTableAdapter = Nothing
-        Me.TableAdapterManager.JabatanTableAdapter = Nothing
-        Me.TableAdapterManager.KaryawanTableAdapter = Nothing
-        Me.TableAdapterManager.KewajibanTableAdapter = Nothing
-        Me.TableAdapterManager.PenggajianMasterTableAdapter = Me.PenggajianMasterTableAdapter
-        Me.TableAdapterManager.PeriodeTableAdapter = Nothing
-        Me.TableAdapterManager.PotonganDetilTableAdapter = Nothing
-        Me.TableAdapterManager.PotonganTableAdapter = Me.PotonganTableAdapter
-        Me.TableAdapterManager.TunjanganDetilTableAdapter = Nothing
-        Me.TableAdapterManager.TunjanganTableAdapter = Me.TunjanganTableAdapter
-        Me.TableAdapterManager.UpdateOrder = Penggajian.dbPenggajianDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'PotonganTableAdapter
-        '
-        Me.PotonganTableAdapter.ClearBeforeFill = True
-        '
-        'TunjanganTableAdapter
-        '
-        Me.TunjanganTableAdapter.ClearBeforeFill = True
-        '
-        'TunjanganBindingSource
-        '
-        Me.TunjanganBindingSource.DataMember = "Tunjangan"
-        Me.TunjanganBindingSource.DataSource = Me.DbPenggajianDataSet
-        '
-        'PotonganBindingSource
-        '
-        Me.PotonganBindingSource.DataMember = "Potongan"
-        Me.PotonganBindingSource.DataSource = Me.DbPenggajianDataSet
-        '
-        'PeriodeBindingSource
-        '
-        Me.PeriodeBindingSource.DataMember = "Periode"
-        Me.PeriodeBindingSource.DataSource = Me.DbPenggajianDataSet
-        '
-        'PeriodeTableAdapter
-        '
-        Me.PeriodeTableAdapter.ClearBeforeFill = True
-        '
-        'KaryawanBindingSource
-        '
-        Me.KaryawanBindingSource.DataMember = "Karyawan"
-        Me.KaryawanBindingSource.DataSource = Me.DbPenggajianDataSet
-        '
-        'KaryawanTableAdapter
-        '
-        Me.KaryawanTableAdapter.ClearBeforeFill = True
-        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.txtPeriode)
         Me.GroupBox1.Controls.Add(Me.rdPeriode)
         Me.GroupBox1.Controls.Add(Me.rdTanggal)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.cariPeriode)
         Me.GroupBox1.Controls.Add(Me.BtnCari)
         Me.GroupBox1.Location = New System.Drawing.Point(460, 6)
         Me.GroupBox1.Name = "GroupBox1"
@@ -482,15 +298,15 @@ Partial Class FGaji
         Me.rdTanggal.TabStop = True
         Me.rdTanggal.UseVisualStyleBackColor = True
         '
-        'DateTimePicker1
+        'cariPeriode
         '
-        Me.DateTimePicker1.CustomFormat = ""
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(59, 21)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(177, 25)
-        Me.DateTimePicker1.TabIndex = 38
+        Me.cariPeriode.CustomFormat = ""
+        Me.cariPeriode.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.cariPeriode.Location = New System.Drawing.Point(59, 21)
+        Me.cariPeriode.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cariPeriode.Name = "cariPeriode"
+        Me.cariPeriode.Size = New System.Drawing.Size(177, 25)
+        Me.cariPeriode.TabIndex = 38
         '
         'GroupBox2
         '
@@ -564,20 +380,54 @@ Partial Class FGaji
         'idPenggajianMaster
         '
         Me.idPenggajianMaster.DataPropertyName = "idPenggajianMaster"
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.idPenggajianMaster.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.idPenggajianMaster.DefaultCellStyle = DataGridViewCellStyle15
         Me.idPenggajianMaster.HeaderText = "Nomor"
         Me.idPenggajianMaster.Name = "idPenggajianMaster"
         Me.idPenggajianMaster.Width = 70
         '
+        'TotalGaji
+        '
+        Me.TotalGaji.DataPropertyName = "TotalGaji"
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle16.Format = "C2"
+        DataGridViewCellStyle16.NullValue = Nothing
+        Me.TotalGaji.DefaultCellStyle = DataGridViewCellStyle16
+        Me.TotalGaji.HeaderText = "Total Gaji"
+        Me.TotalGaji.Name = "TotalGaji"
+        '
+        'kehadiran
+        '
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle17.NullValue = "0"
+        Me.kehadiran.DefaultCellStyle = DataGridViewCellStyle17
+        Me.kehadiran.HeaderText = "Input Kehadiran"
+        Me.kehadiran.Name = "kehadiran"
+        Me.kehadiran.Width = 70
+        '
+        'GridKewajibanPotonganBindingSource
+        '
+        Me.GridKewajibanPotonganBindingSource.DataMember = "GridKewajibanPotongan"
+        Me.GridKewajibanPotonganBindingSource.DataSource = Me.DbPenggajianDataSet
+        '
+        'DbPenggajianDataSet
+        '
+        Me.DbPenggajianDataSet.DataSetName = "dbPenggajianDataSet"
+        Me.DbPenggajianDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'GridHakTunjanganBindingSource
+        '
+        Me.GridHakTunjanganBindingSource.DataMember = "gridHakTunjangan"
+        Me.GridHakTunjanganBindingSource.DataSource = Me.DbPenggajianDataSet
+        '
         'IdKaryawanDataGridViewTextBoxColumn2
         '
         Me.IdKaryawanDataGridViewTextBoxColumn2.DataPropertyName = "idKaryawan"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Purple
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        Me.IdKaryawanDataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.Purple
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.White
+        Me.IdKaryawanDataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle18
         Me.IdKaryawanDataGridViewTextBoxColumn2.HeaderText = "ID Karyawan"
         Me.IdKaryawanDataGridViewTextBoxColumn2.Name = "IdKaryawanDataGridViewTextBoxColumn2"
         Me.IdKaryawanDataGridViewTextBoxColumn2.Width = 70
@@ -598,60 +448,222 @@ Partial Class FGaji
         'GajiPokokDataGridViewTextBoxColumn
         '
         Me.GajiPokokDataGridViewTextBoxColumn.DataPropertyName = "gajiPokok"
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle3.Format = "C2"
-        DataGridViewCellStyle3.NullValue = "0"
-        Me.GajiPokokDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle19.Format = "C2"
+        DataGridViewCellStyle19.NullValue = "0"
+        Me.GajiPokokDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle19
         Me.GajiPokokDataGridViewTextBoxColumn.HeaderText = "Gaji Pokok"
         Me.GajiPokokDataGridViewTextBoxColumn.Name = "GajiPokokDataGridViewTextBoxColumn"
         '
         'TotalTunjanganDataGridViewTextBoxColumn
         '
         Me.TotalTunjanganDataGridViewTextBoxColumn.DataPropertyName = "totalTunjangan"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle4.Format = "C2"
-        DataGridViewCellStyle4.NullValue = "0"
-        Me.TotalTunjanganDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle20.Format = "C2"
+        DataGridViewCellStyle20.NullValue = "0"
+        Me.TotalTunjanganDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle20
         Me.TotalTunjanganDataGridViewTextBoxColumn.HeaderText = "Tunjangan"
         Me.TotalTunjanganDataGridViewTextBoxColumn.Name = "TotalTunjanganDataGridViewTextBoxColumn"
         '
         'TotalPotonganDataGridViewTextBoxColumn
         '
         Me.TotalPotonganDataGridViewTextBoxColumn.DataPropertyName = "totalPotongan"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle5.Format = "C2"
-        DataGridViewCellStyle5.NullValue = "0"
-        Me.TotalPotonganDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle21.Format = "C2"
+        DataGridViewCellStyle21.NullValue = "0"
+        Me.TotalPotonganDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle21
         Me.TotalPotonganDataGridViewTextBoxColumn.HeaderText = "Potongan"
         Me.TotalPotonganDataGridViewTextBoxColumn.Name = "TotalPotonganDataGridViewTextBoxColumn"
-        '
-        'TotalGaji
-        '
-        Me.TotalGaji.DataPropertyName = "TotalGaji"
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle6.Format = "C2"
-        DataGridViewCellStyle6.NullValue = Nothing
-        Me.TotalGaji.DefaultCellStyle = DataGridViewCellStyle6
-        Me.TotalGaji.HeaderText = "Total Gaji"
-        Me.TotalGaji.Name = "TotalGaji"
         '
         'JmlKehadiranDataGridViewTextBoxColumn
         '
         Me.JmlKehadiranDataGridViewTextBoxColumn.DataPropertyName = "jmlKehadiran"
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.JmlKehadiranDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.JmlKehadiranDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle22
         Me.JmlKehadiranDataGridViewTextBoxColumn.HeaderText = "Jml. Kehadiran"
         Me.JmlKehadiranDataGridViewTextBoxColumn.Name = "JmlKehadiranDataGridViewTextBoxColumn"
         Me.JmlKehadiranDataGridViewTextBoxColumn.Width = 70
         '
-        'kehadiran
+        'GridKaryawanBindingSource
         '
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.NullValue = "0"
-        Me.kehadiran.DefaultCellStyle = DataGridViewCellStyle8
-        Me.kehadiran.HeaderText = "Input Kehadiran"
-        Me.kehadiran.Name = "kehadiran"
-        Me.kehadiran.Width = 70
+        Me.GridKaryawanBindingSource.DataMember = "GridKaryawan"
+        Me.GridKaryawanBindingSource.DataSource = Me.DbPenggajianDataSet
+        '
+        'GridHakTunjanganTableAdapter
+        '
+        Me.GridHakTunjanganTableAdapter.ClearBeforeFill = True
+        '
+        'GridKewajibanPotonganTableAdapter
+        '
+        Me.GridKewajibanPotonganTableAdapter.ClearBeforeFill = True
+        '
+        'GridKaryawanTableAdapter
+        '
+        Me.GridKaryawanTableAdapter.ClearBeforeFill = True
+        '
+        'PenggajianMasterBindingSource
+        '
+        Me.PenggajianMasterBindingSource.DataMember = "PenggajianMaster"
+        Me.PenggajianMasterBindingSource.DataSource = Me.DbPenggajianDataSet
+        '
+        'PenggajianMasterTableAdapter
+        '
+        Me.PenggajianMasterTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.HakTableAdapter = Nothing
+        Me.TableAdapterManager.JabatanTableAdapter = Nothing
+        Me.TableAdapterManager.KaryawanTableAdapter = Nothing
+        Me.TableAdapterManager.KewajibanTableAdapter = Nothing
+        Me.TableAdapterManager.PenggajianMasterTableAdapter = Me.PenggajianMasterTableAdapter
+        Me.TableAdapterManager.PeriodeTableAdapter = Nothing
+        Me.TableAdapterManager.PotonganDetilTableAdapter = Nothing
+        Me.TableAdapterManager.PotonganTableAdapter = Me.PotonganTableAdapter
+        Me.TableAdapterManager.TunjanganDetilTableAdapter = Nothing
+        Me.TableAdapterManager.TunjanganTableAdapter = Me.TunjanganTableAdapter
+        Me.TableAdapterManager.UpdateOrder = Penggajian.dbPenggajianDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'PotonganTableAdapter
+        '
+        Me.PotonganTableAdapter.ClearBeforeFill = True
+        '
+        'TunjanganTableAdapter
+        '
+        Me.TunjanganTableAdapter.ClearBeforeFill = True
+        '
+        'TunjanganBindingSource
+        '
+        Me.TunjanganBindingSource.DataMember = "Tunjangan"
+        Me.TunjanganBindingSource.DataSource = Me.DbPenggajianDataSet
+        '
+        'PotonganBindingSource
+        '
+        Me.PotonganBindingSource.DataMember = "Potongan"
+        Me.PotonganBindingSource.DataSource = Me.DbPenggajianDataSet
+        '
+        'PeriodeBindingSource
+        '
+        Me.PeriodeBindingSource.DataMember = "Periode"
+        Me.PeriodeBindingSource.DataSource = Me.DbPenggajianDataSet
+        '
+        'PeriodeTableAdapter
+        '
+        Me.PeriodeTableAdapter.ClearBeforeFill = True
+        '
+        'KaryawanBindingSource
+        '
+        Me.KaryawanBindingSource.DataMember = "Karyawan"
+        Me.KaryawanBindingSource.DataSource = Me.DbPenggajianDataSet
+        '
+        'KaryawanTableAdapter
+        '
+        Me.KaryawanTableAdapter.ClearBeforeFill = True
+        '
+        'statusHak
+        '
+        Me.statusHak.DataPropertyName = "statusHak"
+        Me.statusHak.HeaderText = ""
+        Me.statusHak.Name = "statusHak"
+        Me.statusHak.ReadOnly = True
+        Me.statusHak.Width = 30
+        '
+        'NamaTunjanganDataGridViewTextBoxColumn
+        '
+        Me.NamaTunjanganDataGridViewTextBoxColumn.DataPropertyName = "namaTunjangan"
+        Me.NamaTunjanganDataGridViewTextBoxColumn.HeaderText = "Tunjangan"
+        Me.NamaTunjanganDataGridViewTextBoxColumn.Name = "NamaTunjanganDataGridViewTextBoxColumn"
+        Me.NamaTunjanganDataGridViewTextBoxColumn.ReadOnly = True
+        Me.NamaTunjanganDataGridViewTextBoxColumn.Width = 80
+        '
+        'BesarTunjanganDataGridViewTextBoxColumn
+        '
+        Me.BesarTunjanganDataGridViewTextBoxColumn.DataPropertyName = "besarTunjangan"
+        DataGridViewCellStyle23.Format = "C2"
+        DataGridViewCellStyle23.NullValue = Nothing
+        Me.BesarTunjanganDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle23
+        Me.BesarTunjanganDataGridViewTextBoxColumn.HeaderText = "Nominal"
+        Me.BesarTunjanganDataGridViewTextBoxColumn.Name = "BesarTunjanganDataGridViewTextBoxColumn"
+        Me.BesarTunjanganDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'Penambahan
+        '
+        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle24.Format = "C2"
+        DataGridViewCellStyle24.NullValue = "0"
+        Me.Penambahan.DefaultCellStyle = DataGridViewCellStyle24
+        Me.Penambahan.HeaderText = "Tambah"
+        Me.Penambahan.Name = "Penambahan"
+        Me.Penambahan.ReadOnly = True
+        Me.Penambahan.Width = 80
+        '
+        'ubah
+        '
+        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle25.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle25.Font = New System.Drawing.Font("Showcard Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle25.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle25.NullValue = "+"
+        Me.ubah.DefaultCellStyle = DataGridViewCellStyle25
+        Me.ubah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ubah.HeaderText = "Aksi"
+        Me.ubah.Name = "ubah"
+        Me.ubah.ReadOnly = True
+        Me.ubah.Text = "Update"
+        Me.ubah.Width = 50
+        '
+        'StatusKewajibanDataGridViewCheckBoxColumn
+        '
+        Me.StatusKewajibanDataGridViewCheckBoxColumn.DataPropertyName = "statusKewajiban"
+        Me.StatusKewajibanDataGridViewCheckBoxColumn.HeaderText = ""
+        Me.StatusKewajibanDataGridViewCheckBoxColumn.Name = "StatusKewajibanDataGridViewCheckBoxColumn"
+        Me.StatusKewajibanDataGridViewCheckBoxColumn.ReadOnly = True
+        Me.StatusKewajibanDataGridViewCheckBoxColumn.Width = 30
+        '
+        'NamaPotonganDataGridViewTextBoxColumn
+        '
+        Me.NamaPotonganDataGridViewTextBoxColumn.DataPropertyName = "namaPotongan"
+        Me.NamaPotonganDataGridViewTextBoxColumn.HeaderText = "Potongan"
+        Me.NamaPotonganDataGridViewTextBoxColumn.Name = "NamaPotonganDataGridViewTextBoxColumn"
+        Me.NamaPotonganDataGridViewTextBoxColumn.ReadOnly = True
+        Me.NamaPotonganDataGridViewTextBoxColumn.Width = 80
+        '
+        'BesarPotonganDataGridViewTextBoxColumn
+        '
+        Me.BesarPotonganDataGridViewTextBoxColumn.DataPropertyName = "besarPotongan"
+        DataGridViewCellStyle26.Format = "C2"
+        DataGridViewCellStyle26.NullValue = Nothing
+        Me.BesarPotonganDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle26
+        Me.BesarPotonganDataGridViewTextBoxColumn.HeaderText = "Nominal"
+        Me.BesarPotonganDataGridViewTextBoxColumn.Name = "BesarPotonganDataGridViewTextBoxColumn"
+        Me.BesarPotonganDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle27.Format = "C2"
+        DataGridViewCellStyle27.NullValue = "0"
+        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle27
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Kurangi"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        Me.DataGridViewTextBoxColumn8.Width = 80
+        '
+        'DataGridViewButtonColumn1
+        '
+        DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle28.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle28.Font = New System.Drawing.Font("Showcard Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle28.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle28.NullValue = "+"
+        Me.DataGridViewButtonColumn1.DefaultCellStyle = DataGridViewCellStyle28
+        Me.DataGridViewButtonColumn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DataGridViewButtonColumn1.HeaderText = "Aksi"
+        Me.DataGridViewButtonColumn1.Name = "DataGridViewButtonColumn1"
+        Me.DataGridViewButtonColumn1.ReadOnly = True
+        Me.DataGridViewButtonColumn1.Text = "Update"
+        Me.DataGridViewButtonColumn1.Width = 50
         '
         'FGaji
         '
@@ -674,24 +686,24 @@ Partial Class FGaji
         Me.Name = "FGaji"
         Me.Text = "Penggajian"
         CType(Me.GridKaryawanDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridKaryawanBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DbPenggajianDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridHakTunjanganDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridHakTunjanganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridKewajibanPotonganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
-        CType(Me.PenggajianMasterBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TunjanganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PotonganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PeriodeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.KaryawanBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
+        CType(Me.GridKewajibanPotonganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DbPenggajianDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridHakTunjanganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridKaryawanBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PenggajianMasterBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TunjanganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PotonganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PeriodeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KaryawanBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -723,16 +735,6 @@ Partial Class FGaji
     Friend WithEvents TunjanganBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents PotonganTableAdapter As Penggajian.dbPenggajianDataSetTableAdapters.PotonganTableAdapter
     Friend WithEvents PotonganBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents statusHak As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents NamaTunjanganDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents BesarTunjanganDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Penambahan As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ubah As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents StatusKewajibanDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents NamaPotonganDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents BesarPotonganDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewButtonColumn1 As System.Windows.Forms.DataGridViewButtonColumn
     Friend WithEvents PeriodeBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents PeriodeTableAdapter As Penggajian.dbPenggajianDataSetTableAdapters.PeriodeTableAdapter
     Friend WithEvents KaryawanBindingSource As System.Windows.Forms.BindingSource
@@ -741,7 +743,7 @@ Partial Class FGaji
     Friend WithEvents txtPeriode As System.Windows.Forms.TextBox
     Friend WithEvents rdPeriode As System.Windows.Forms.RadioButton
     Friend WithEvents rdTanggal As System.Windows.Forms.RadioButton
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents cariPeriode As System.Windows.Forms.DateTimePicker
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
@@ -758,4 +760,14 @@ Partial Class FGaji
     Friend WithEvents TotalGaji As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents JmlKehadiranDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents kehadiran As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents statusHak As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents NamaTunjanganDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents BesarTunjanganDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Penambahan As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ubah As System.Windows.Forms.DataGridViewButtonColumn
+    Friend WithEvents StatusKewajibanDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents NamaPotonganDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents BesarPotonganDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewButtonColumn1 As System.Windows.Forms.DataGridViewButtonColumn
 End Class

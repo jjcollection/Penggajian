@@ -180,6 +180,10 @@ Public Class FGaji
         tanggalPeriode.ShowUpDown = True
         tanggalPeriode.CustomFormat = " MMMM, yyyy"
         tanggalPeriode.Format = DateTimePickerFormat.Custom
+
+        cariPeriode.ShowUpDown = True
+        cariPeriode.CustomFormat = " MMMM, yyyy"
+        cariPeriode.Format = DateTimePickerFormat.Custom
         ' GridHakTunjanganTableAdapter.FillByKaryawan(DbPenggajianDataSet.gridHakTunjangan, GridKaryawanDataGridView.SelectedCells(0).Value)
         'GridKewajibanPotonganTableAdapter.FillByKaryawanPotongan(DbPenggajianDataSet.GridKewajibanPotongan, GridKaryawanDataGridView.SelectedCells(0).Value)
     End Sub
@@ -192,12 +196,12 @@ Public Class FGaji
 
    
     Private Sub GridKaryawanDataGridView_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles GridKaryawanDataGridView.CellClick
-        GridHakTunjanganTableAdapter.FillByKaryawan(DbPenggajianDataSet.gridHakTunjangan, GridKaryawanDataGridView.SelectedCells(1).Value)
-        GridKewajibanPotonganTableAdapter.FillByKaryawanPotongan(DbPenggajianDataSet.GridKewajibanPotongan, GridKaryawanDataGridView.SelectedCells(1).Value)
-        Dim jml = GridHakTunjanganTableAdapter.ScalarTotalTunjangan(GridKaryawanDataGridView.SelectedCells(1).Value)
+        GridHakTunjanganTableAdapter.FillByKaryawan(DbPenggajianDataSet.gridHakTunjangan, GridKaryawanDataGridView.CurrentRow.Cells(1).FormattedValue)
+        GridKewajibanPotonganTableAdapter.FillByKaryawanPotongan(DbPenggajianDataSet.GridKewajibanPotongan, GridKaryawanDataGridView.CurrentRow.Cells(1).FormattedValue)
+        Dim jml = GridHakTunjanganTableAdapter.ScalarTotalTunjangan(GridKaryawanDataGridView.CurrentRow.Cells(1).FormattedValue)
         lbTunjangan.Text = "Total Tunjangan : " & Format(jml, "Currency")
 
-        Dim potongan = GridKewajibanPotonganTableAdapter.ScalarTotalPotongan(GridKaryawanDataGridView.SelectedCells(1).Value)
+        Dim potongan = GridKewajibanPotonganTableAdapter.ScalarTotalPotongan(GridKaryawanDataGridView.CurrentRow.Cells(1).FormattedValue)
         lbPotongan.Text = "Total Potongan : " & Format(potongan, "Currency")
     End Sub
 
