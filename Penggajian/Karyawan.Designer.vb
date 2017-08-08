@@ -28,10 +28,13 @@ Partial Class Karyawan
         Dim AlamatLabel As System.Windows.Forms.Label
         Dim TelpLabel As System.Windows.Forms.Label
         Dim KodebagianLabel As System.Windows.Forms.Label
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.KaryawanDataGridView = New System.Windows.Forms.DataGridView()
+        Me.IdKaryawanDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.idJabatan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaKaryawanDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaJabatanDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TelpDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AlamatDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GridKaryawanBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DbPenggajianDataSet = New Penggajian.dbPenggajianDataSet()
         Me.IdKaryawanTextBox = New System.Windows.Forms.TextBox()
@@ -65,12 +68,8 @@ Partial Class Karyawan
         Me.KewajibanTableAdapter = New Penggajian.dbPenggajianDataSetTableAdapters.KewajibanTableAdapter()
         Me.GridHakTunjanganBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GridHakTunjanganTableAdapter = New Penggajian.dbPenggajianDataSetTableAdapters.gridHakTunjanganTableAdapter()
-        Me.IdKaryawanDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.idJabatan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NamaKaryawanDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NamaJabatanDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TelpDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AlamatDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GridKewajibanPotonganBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GridKewajibanPotonganTableAdapter = New Penggajian.dbPenggajianDataSetTableAdapters.GridKewajibanPotonganTableAdapter()
         KodeKaryawanLabel = New System.Windows.Forms.Label()
         NamakaryawanLabel = New System.Windows.Forms.Label()
         AlamatLabel = New System.Windows.Forms.Label()
@@ -88,50 +87,56 @@ Partial Class Karyawan
         CType(Me.HakBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KewajibanBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridHakTunjanganBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridKewajibanPotonganBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'KodeKaryawanLabel
         '
         KodeKaryawanLabel.AutoSize = True
-        KodeKaryawanLabel.Location = New System.Drawing.Point(39, 24)
+        KodeKaryawanLabel.Location = New System.Drawing.Point(19, 18)
+        KodeKaryawanLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         KodeKaryawanLabel.Name = "KodeKaryawanLabel"
-        KodeKaryawanLabel.Size = New System.Drawing.Size(85, 13)
+        KodeKaryawanLabel.Size = New System.Drawing.Size(117, 21)
         KodeKaryawanLabel.TabIndex = 1
         KodeKaryawanLabel.Text = "Kode Karyawan:"
         '
         'NamakaryawanLabel
         '
         NamakaryawanLabel.AutoSize = True
-        NamakaryawanLabel.Location = New System.Drawing.Point(39, 50)
+        NamakaryawanLabel.Location = New System.Drawing.Point(13, 55)
+        NamakaryawanLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         NamakaryawanLabel.Name = "NamakaryawanLabel"
-        NamakaryawanLabel.Size = New System.Drawing.Size(88, 13)
+        NamakaryawanLabel.Size = New System.Drawing.Size(123, 21)
         NamakaryawanLabel.TabIndex = 3
         NamakaryawanLabel.Text = "Nama Karyawan:"
         '
         'AlamatLabel
         '
         AlamatLabel.AutoSize = True
-        AlamatLabel.Location = New System.Drawing.Point(39, 77)
+        AlamatLabel.Location = New System.Drawing.Point(75, 92)
+        AlamatLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         AlamatLabel.Name = "AlamatLabel"
-        AlamatLabel.Size = New System.Drawing.Size(42, 13)
+        AlamatLabel.Size = New System.Drawing.Size(61, 21)
         AlamatLabel.TabIndex = 5
         AlamatLabel.Text = "Alamat:"
         '
         'TelpLabel
         '
         TelpLabel.AutoSize = True
-        TelpLabel.Location = New System.Drawing.Point(420, 20)
+        TelpLabel.Location = New System.Drawing.Point(99, 235)
+        TelpLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         TelpLabel.Name = "TelpLabel"
-        TelpLabel.Size = New System.Drawing.Size(31, 13)
+        TelpLabel.Size = New System.Drawing.Size(39, 21)
         TelpLabel.TabIndex = 7
         TelpLabel.Text = "Telp:"
         '
         'KodebagianLabel
         '
         KodebagianLabel.AutoSize = True
-        KodebagianLabel.Location = New System.Drawing.Point(54, 213)
+        KodebagianLabel.Location = New System.Drawing.Point(68, 269)
+        KodebagianLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         KodebagianLabel.Name = "KodebagianLabel"
-        KodebagianLabel.Size = New System.Drawing.Size(51, 13)
+        KodebagianLabel.Size = New System.Drawing.Size(70, 21)
         KodebagianLabel.TabIndex = 17
         KodebagianLabel.Text = "Jabatan :"
         '
@@ -143,39 +148,62 @@ Partial Class Karyawan
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.KaryawanDataGridView.AutoGenerateColumns = False
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.KaryawanDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.KaryawanDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.KaryawanDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdKaryawanDataGridViewTextBoxColumn, Me.idJabatan, Me.NamaKaryawanDataGridViewTextBoxColumn, Me.NamaJabatanDataGridViewTextBoxColumn, Me.TelpDataGridViewTextBoxColumn, Me.AlamatDataGridViewTextBoxColumn})
         Me.KaryawanDataGridView.DataSource = Me.GridKaryawanBindingSource
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.KaryawanDataGridView.DefaultCellStyle = DataGridViewCellStyle2
-        Me.KaryawanDataGridView.Location = New System.Drawing.Point(11, 250)
+        Me.KaryawanDataGridView.Location = New System.Drawing.Point(8, 305)
+        Me.KaryawanDataGridView.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.KaryawanDataGridView.Name = "KaryawanDataGridView"
         Me.KaryawanDataGridView.ReadOnly = True
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.KaryawanDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.KaryawanDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.KaryawanDataGridView.Size = New System.Drawing.Size(971, 326)
+        Me.KaryawanDataGridView.Size = New System.Drawing.Size(1321, 384)
         Me.KaryawanDataGridView.TabIndex = 7
+        '
+        'IdKaryawanDataGridViewTextBoxColumn
+        '
+        Me.IdKaryawanDataGridViewTextBoxColumn.DataPropertyName = "idKaryawan"
+        Me.IdKaryawanDataGridViewTextBoxColumn.HeaderText = "idKaryawan"
+        Me.IdKaryawanDataGridViewTextBoxColumn.Name = "IdKaryawanDataGridViewTextBoxColumn"
+        Me.IdKaryawanDataGridViewTextBoxColumn.ReadOnly = True
+        Me.IdKaryawanDataGridViewTextBoxColumn.Visible = False
+        '
+        'idJabatan
+        '
+        Me.idJabatan.DataPropertyName = "idJabatan"
+        Me.idJabatan.HeaderText = "idJabatan"
+        Me.idJabatan.Name = "idJabatan"
+        Me.idJabatan.ReadOnly = True
+        Me.idJabatan.Visible = False
+        '
+        'NamaKaryawanDataGridViewTextBoxColumn
+        '
+        Me.NamaKaryawanDataGridViewTextBoxColumn.DataPropertyName = "namaKaryawan"
+        Me.NamaKaryawanDataGridViewTextBoxColumn.HeaderText = "Nama Karyawan"
+        Me.NamaKaryawanDataGridViewTextBoxColumn.Name = "NamaKaryawanDataGridViewTextBoxColumn"
+        Me.NamaKaryawanDataGridViewTextBoxColumn.ReadOnly = True
+        Me.NamaKaryawanDataGridViewTextBoxColumn.Width = 150
+        '
+        'NamaJabatanDataGridViewTextBoxColumn
+        '
+        Me.NamaJabatanDataGridViewTextBoxColumn.DataPropertyName = "namaJabatan"
+        Me.NamaJabatanDataGridViewTextBoxColumn.HeaderText = "Jabatan"
+        Me.NamaJabatanDataGridViewTextBoxColumn.Name = "NamaJabatanDataGridViewTextBoxColumn"
+        Me.NamaJabatanDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TelpDataGridViewTextBoxColumn
+        '
+        Me.TelpDataGridViewTextBoxColumn.DataPropertyName = "Telp"
+        Me.TelpDataGridViewTextBoxColumn.HeaderText = "Telepon"
+        Me.TelpDataGridViewTextBoxColumn.Name = "TelpDataGridViewTextBoxColumn"
+        Me.TelpDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'AlamatDataGridViewTextBoxColumn
+        '
+        Me.AlamatDataGridViewTextBoxColumn.DataPropertyName = "alamat"
+        Me.AlamatDataGridViewTextBoxColumn.HeaderText = "Alamat"
+        Me.AlamatDataGridViewTextBoxColumn.Name = "AlamatDataGridViewTextBoxColumn"
+        Me.AlamatDataGridViewTextBoxColumn.ReadOnly = True
+        Me.AlamatDataGridViewTextBoxColumn.Width = 350
         '
         'GridKaryawanBindingSource
         '
@@ -189,39 +217,44 @@ Partial Class Karyawan
         '
         'IdKaryawanTextBox
         '
-        Me.IdKaryawanTextBox.Location = New System.Drawing.Point(130, 21)
+        Me.IdKaryawanTextBox.Location = New System.Drawing.Point(146, 15)
+        Me.IdKaryawanTextBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.IdKaryawanTextBox.Name = "IdKaryawanTextBox"
-        Me.IdKaryawanTextBox.Size = New System.Drawing.Size(121, 20)
+        Me.IdKaryawanTextBox.Size = New System.Drawing.Size(160, 29)
         Me.IdKaryawanTextBox.TabIndex = 0
         '
         'AlamatTextBox
         '
-        Me.AlamatTextBox.Location = New System.Drawing.Point(130, 74)
+        Me.AlamatTextBox.Location = New System.Drawing.Point(146, 89)
+        Me.AlamatTextBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.AlamatTextBox.Multiline = True
         Me.AlamatTextBox.Name = "AlamatTextBox"
-        Me.AlamatTextBox.Size = New System.Drawing.Size(367, 126)
+        Me.AlamatTextBox.Size = New System.Drawing.Size(488, 137)
         Me.AlamatTextBox.TabIndex = 3
         '
         'TelpTextBox
         '
-        Me.TelpTextBox.Location = New System.Drawing.Point(458, 17)
+        Me.TelpTextBox.Location = New System.Drawing.Point(146, 232)
+        Me.TelpTextBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TelpTextBox.Name = "TelpTextBox"
-        Me.TelpTextBox.Size = New System.Drawing.Size(257, 20)
+        Me.TelpTextBox.Size = New System.Drawing.Size(341, 29)
         Me.TelpTextBox.TabIndex = 2
         '
         'NamakaryawanTextBox
         '
-        Me.NamakaryawanTextBox.Location = New System.Drawing.Point(130, 43)
+        Me.NamakaryawanTextBox.Location = New System.Drawing.Point(146, 52)
+        Me.NamakaryawanTextBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.NamakaryawanTextBox.Name = "NamakaryawanTextBox"
-        Me.NamakaryawanTextBox.Size = New System.Drawing.Size(284, 20)
+        Me.NamakaryawanTextBox.Size = New System.Drawing.Size(377, 29)
         Me.NamakaryawanTextBox.TabIndex = 1
         '
         'Button5
         '
         Me.Button5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button5.Location = New System.Drawing.Point(335, 586)
+        Me.Button5.Location = New System.Drawing.Point(408, 694)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.Size = New System.Drawing.Size(100, 37)
         Me.Button5.TabIndex = 16
         Me.Button5.Text = "Keluar"
         Me.Button5.UseVisualStyleBackColor = True
@@ -229,9 +262,10 @@ Partial Class Karyawan
         'Button4
         '
         Me.Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button4.Location = New System.Drawing.Point(254, 586)
+        Me.Button4.Location = New System.Drawing.Point(308, 694)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(100, 37)
         Me.Button4.TabIndex = 17
         Me.Button4.Text = "Hapus"
         Me.Button4.UseVisualStyleBackColor = True
@@ -239,9 +273,10 @@ Partial Class Karyawan
         'Button3
         '
         Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button3.Location = New System.Drawing.Point(173, 586)
+        Me.Button3.Location = New System.Drawing.Point(208, 694)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(100, 37)
         Me.Button3.TabIndex = 15
         Me.Button3.Text = "Ubah"
         Me.Button3.UseVisualStyleBackColor = True
@@ -249,9 +284,10 @@ Partial Class Karyawan
         'Button2
         '
         Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button2.Location = New System.Drawing.Point(92, 586)
+        Me.Button2.Location = New System.Drawing.Point(108, 694)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(100, 37)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "Simpan"
         Me.Button2.UseVisualStyleBackColor = True
@@ -259,9 +295,10 @@ Partial Class Karyawan
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button1.Location = New System.Drawing.Point(11, 586)
+        Me.Button1.Location = New System.Drawing.Point(8, 694)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(100, 37)
         Me.Button1.TabIndex = 14
         Me.Button1.Text = "Baru"
         Me.Button1.UseVisualStyleBackColor = True
@@ -271,9 +308,10 @@ Partial Class Karyawan
         Me.KodebagianComboBox.DataSource = Me.JabatanBindingSource
         Me.KodebagianComboBox.DisplayMember = "namaJabatan"
         Me.KodebagianComboBox.FormattingEnabled = True
-        Me.KodebagianComboBox.Location = New System.Drawing.Point(130, 210)
+        Me.KodebagianComboBox.Location = New System.Drawing.Point(146, 266)
+        Me.KodebagianComboBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.KodebagianComboBox.Name = "KodebagianComboBox"
-        Me.KodebagianComboBox.Size = New System.Drawing.Size(254, 21)
+        Me.KodebagianComboBox.Size = New System.Drawing.Size(341, 29)
         Me.KodebagianComboBox.TabIndex = 4
         Me.KodebagianComboBox.ValueMember = "idJabatan"
         '
@@ -316,17 +354,19 @@ Partial Class Karyawan
         'clPotongan
         '
         Me.clPotongan.FormattingEnabled = True
-        Me.clPotongan.Location = New System.Drawing.Point(629, 74)
+        Me.clPotongan.Location = New System.Drawing.Point(809, 89)
+        Me.clPotongan.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.clPotongan.Name = "clPotongan"
-        Me.clPotongan.Size = New System.Drawing.Size(120, 124)
+        Me.clPotongan.Size = New System.Drawing.Size(159, 124)
         Me.clPotongan.TabIndex = 6
         '
         'clTunjangan
         '
         Me.clTunjangan.FormattingEnabled = True
-        Me.clTunjangan.Location = New System.Drawing.Point(503, 74)
+        Me.clTunjangan.Location = New System.Drawing.Point(642, 89)
+        Me.clTunjangan.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.clTunjangan.Name = "clTunjangan"
-        Me.clTunjangan.Size = New System.Drawing.Size(120, 124)
+        Me.clTunjangan.Size = New System.Drawing.Size(159, 124)
         Me.clTunjangan.TabIndex = 5
         '
         'TunjanganBindingSource
@@ -388,57 +428,20 @@ Partial Class Karyawan
         '
         Me.GridHakTunjanganTableAdapter.ClearBeforeFill = True
         '
-        'IdKaryawanDataGridViewTextBoxColumn
+        'GridKewajibanPotonganBindingSource
         '
-        Me.IdKaryawanDataGridViewTextBoxColumn.DataPropertyName = "idKaryawan"
-        Me.IdKaryawanDataGridViewTextBoxColumn.HeaderText = "idKaryawan"
-        Me.IdKaryawanDataGridViewTextBoxColumn.Name = "IdKaryawanDataGridViewTextBoxColumn"
-        Me.IdKaryawanDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IdKaryawanDataGridViewTextBoxColumn.Visible = False
+        Me.GridKewajibanPotonganBindingSource.DataSource = Me.DbPenggajianDataSet
+        Me.GridKewajibanPotonganBindingSource.Position = 0
         '
-        'idJabatan
+        'GridKewajibanPotonganTableAdapter
         '
-        Me.idJabatan.DataPropertyName = "idJabatan"
-        Me.idJabatan.HeaderText = "idJabatan"
-        Me.idJabatan.Name = "idJabatan"
-        Me.idJabatan.ReadOnly = True
-        Me.idJabatan.Visible = False
-        '
-        'NamaKaryawanDataGridViewTextBoxColumn
-        '
-        Me.NamaKaryawanDataGridViewTextBoxColumn.DataPropertyName = "namaKaryawan"
-        Me.NamaKaryawanDataGridViewTextBoxColumn.HeaderText = "Nama Karyawan"
-        Me.NamaKaryawanDataGridViewTextBoxColumn.Name = "NamaKaryawanDataGridViewTextBoxColumn"
-        Me.NamaKaryawanDataGridViewTextBoxColumn.ReadOnly = True
-        Me.NamaKaryawanDataGridViewTextBoxColumn.Width = 150
-        '
-        'NamaJabatanDataGridViewTextBoxColumn
-        '
-        Me.NamaJabatanDataGridViewTextBoxColumn.DataPropertyName = "namaJabatan"
-        Me.NamaJabatanDataGridViewTextBoxColumn.HeaderText = "Jabatan"
-        Me.NamaJabatanDataGridViewTextBoxColumn.Name = "NamaJabatanDataGridViewTextBoxColumn"
-        Me.NamaJabatanDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'TelpDataGridViewTextBoxColumn
-        '
-        Me.TelpDataGridViewTextBoxColumn.DataPropertyName = "Telp"
-        Me.TelpDataGridViewTextBoxColumn.HeaderText = "Telepon"
-        Me.TelpDataGridViewTextBoxColumn.Name = "TelpDataGridViewTextBoxColumn"
-        Me.TelpDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'AlamatDataGridViewTextBoxColumn
-        '
-        Me.AlamatDataGridViewTextBoxColumn.DataPropertyName = "alamat"
-        Me.AlamatDataGridViewTextBoxColumn.HeaderText = "Alamat"
-        Me.AlamatDataGridViewTextBoxColumn.Name = "AlamatDataGridViewTextBoxColumn"
-        Me.AlamatDataGridViewTextBoxColumn.ReadOnly = True
-        Me.AlamatDataGridViewTextBoxColumn.Width = 350
+        Me.GridKewajibanPotonganTableAdapter.ClearBeforeFill = True
         '
         'Karyawan
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(994, 617)
+        Me.ClientSize = New System.Drawing.Size(1336, 741)
         Me.Controls.Add(Me.clPotongan)
         Me.Controls.Add(Me.clTunjangan)
         Me.Controls.Add(KodebagianLabel)
@@ -457,6 +460,8 @@ Partial Class Karyawan
         Me.Controls.Add(TelpLabel)
         Me.Controls.Add(Me.TelpTextBox)
         Me.Controls.Add(Me.KaryawanDataGridView)
+        Me.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Karyawan"
         Me.Text = "Karyawan"
         CType(Me.KaryawanDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
@@ -471,6 +476,7 @@ Partial Class Karyawan
         CType(Me.HakBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KewajibanBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridHakTunjanganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridKewajibanPotonganBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -515,4 +521,6 @@ Partial Class Karyawan
     Friend WithEvents NamaJabatanDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TelpDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AlamatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GridKewajibanPotonganBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents GridKewajibanPotonganTableAdapter As Penggajian.dbPenggajianDataSetTableAdapters.GridKewajibanPotonganTableAdapter
 End Class

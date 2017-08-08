@@ -80,11 +80,11 @@ Public Class MenuUtama
 
     End Sub
 
-    Private Sub BarangToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles BarangToolStripMenuItem.Click
+    Private Sub BarangToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         For Each ChildForm As Form In Me.MdiChildren
             ChildForm.Close()
         Next
-      
+
     End Sub
 
     Private Sub TentangToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles TentangToolStripMenuItem.Click
@@ -101,7 +101,7 @@ Public Class MenuUtama
         Karyawan.WindowState = FormWindowState.Maximized
     End Sub
 
-    Private Sub BagianToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles BagianToolStripMenuItem.Click
+    Private Sub BagianToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         For Each ChildForm As Form In Me.MdiChildren
             ChildForm.Close()
         Next
@@ -109,18 +109,18 @@ Public Class MenuUtama
         'Bagian.Show()
     End Sub
 
-    Private Sub PersenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles PersenToolStripMenuItem.Click
+    Private Sub PersenToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         For Each ChildForm As Form In Me.MdiChildren
             ChildForm.Close()
         Next
-     
+
     End Sub
 
-    Private Sub GapokToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GapokToolStripMenuItem.Click
+    Private Sub GapokToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         For Each ChildForm As Form In Me.MdiChildren
             ChildForm.Close()
         Next
-       
+
     End Sub
 
     Private Sub DataGajiToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles DataGajiToolStripMenuItem.Click

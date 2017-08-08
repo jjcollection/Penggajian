@@ -29,6 +29,8 @@
     End Sub
 
     Private Sub Karyawan_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'DbPenggajianDataSet.GridKewajibanPotongan' table. You can move, or remove it, as needed.
+        Me.GridKewajibanPotonganTableAdapter.Fill(Me.DbPenggajianDataSet.GridKewajibanPotongan)
         'TODO: This line of code loads data into the 'DbPenggajianDataSet.gridHakTunjangan' table. You can move, or remove it, as needed.
         Me.GridHakTunjanganTableAdapter.Fill(Me.DbPenggajianDataSet.gridHakTunjangan)
         'TODO: This line of code loads data into the 'DbPenggajianDataSet.Kewajiban' table. You can move, or remove it, as needed.
@@ -117,7 +119,7 @@
             Next
 
 
-            Me.KaryawanTableAdapter.Fill(Me.DbPenggajianDataSet.Karyawan)
+            Me.GridKaryawanTableAdapter.Fill(Me.DbPenggajianDataSet.GridKaryawan)
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -135,9 +137,9 @@
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
         Try
-            'Me.KaryawanTableAdapter.DeleteQuery(KodeKaryawanTextBox.Text)
-            'MsgBox("data telah dihapus.", MsgBoxStyle.Information, "Informasi")
-            'Me.KaryawanTableAdapter.FillByDesc(Me.PenggajianDataSet.karyawan)
+            Me.KaryawanTableAdapter.DeleteKaryawan(IdKaryawanTextBox.Text)
+            MsgBox("data telah dihapus.", MsgBoxStyle.Information, "Informasi")
+            Me.GridKaryawanTableAdapter.Fill(Me.DbPenggajianDataSet.GridKaryawan)
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -157,19 +159,65 @@
 
 
             Dim dt = GridHakTunjanganTableAdapter.GetDataByKaryawan(IdKaryawanTextBox.Text)
+            Dim dtKewajiban = GridKewajibanPotonganTableAdapter.GetDataByKaryawanPotongan(IdKaryawanTextBox.Text)
 
-            With clTunjangan
-                .DataSource = dt
-                .DisplayMember = "namaTunjangan"
-                .ValueMember = "idTunjangan"
-            End With
+            Dim dtSemua = HakTableAdapter.GetData
+            Dim dtKewajibanSemua = PotonganTableAdapter.GetData
 
-            Dim checked As Boolean '= True   ' Set to True or False, as required.
+            If dt.Rows.Count = 0 Then
+                With clTunjangan
+                    .DataSource = dtSemua
+                    .DisplayMember = "namaTunjangan"
+                    .ValueMember = "idTunjangan"
+                End With
+                Dim checked As Boolean = False
 
-            For i As Integer = 0 To clTunjangan.Items.Count - 1
-                checked = dt.Rows(i).Item("statusHak")
-                clTunjangan.SetItemChecked(i, checked)
-            Next
+                For i As Integer = 0 To clTunjangan.Items.Count - 1
+                    clTunjangan.SetItemChecked(i, checked)
+                Next
+            Else
+                With clTunjangan
+                    .DataSource = dt
+                    .DisplayMember = "namaTunjangan"
+                    .ValueMember = "idTunjangan"
+                End With
+
+                Dim checked As Boolean '= True   ' Set to True or False, as required.
+
+                For i As Integer = 0 To clTunjangan.Items.Count - 1
+                    checked = dt.Rows(i).Item("statusHak")
+                    clTunjangan.SetItemChecked(i, checked)
+                Next
+            End If
+            
+
+            '----------------
+            If dtKewajiban.Rows.Count = 0 Then
+                With clPotongan
+                    .DataSource = dtKewajibanSemua
+                    .DisplayMember = "namaPotongan"
+                    .ValueMember = "idPotongan"
+                End With
+                Dim checkedKewajiban As Boolean = False    ' Set to True or False, as required.
+
+                For i As Integer = 0 To clPotongan.Items.Count - 1
+                    clPotongan.SetItemChecked(i, checkedKewajiban)
+                Next
+            Else
+                With clPotongan
+                    .DataSource = dtKewajiban
+                    .DisplayMember = "namaPotongan"
+                    .ValueMember = "idPotongan"
+                End With
+
+                Dim checkedKewajiban As Boolean '= True   ' Set to True or False, as required.
+
+                For i As Integer = 0 To clPotongan.Items.Count - 1
+                    checkedKewajiban = dtKewajiban.Rows(i).Item("statusKewajiban")
+                    clPotongan.SetItemChecked(i, checkedKewajiban)
+                Next
+            End If
+           
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

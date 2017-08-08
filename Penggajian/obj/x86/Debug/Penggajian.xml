@@ -50,6 +50,14 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.GridKewajibanPotonganDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PeriodeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:Penggajian.dbPenggajianDataSet.KaryawanRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -94,6 +102,14 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.GridKewajibanPotonganRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PeriodeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:Penggajian.dbPenggajianDataSet.KaryawanRowChangeEvent">
 	<summary>
 Row event argument class
@@ -135,6 +151,14 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:Penggajian.dbPenggajianDataSet.gridHakTunjanganRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.GridKewajibanPotonganRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSet.PeriodeRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -183,6 +207,14 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.gridHakTunjanganTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.GridKewajibanPotonganTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.PeriodeTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
