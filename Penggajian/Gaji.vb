@@ -167,29 +167,15 @@ Public Class FGaji
     End Sub
 
     Private Sub FGaji_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet.Karyawan' table. You can move, or remove it, as needed.
         Me.KaryawanTableAdapter.Fill(Me.DbPenggajianDataSet.Karyawan)
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet.Periode' table. You can move, or remove it, as needed.
         Me.PeriodeTableAdapter.Fill(Me.DbPenggajianDataSet.Periode)
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet.Potongan' table. You can move, or remove it, as needed.
         Me.PotonganTableAdapter.Fill(Me.DbPenggajianDataSet.Potongan)
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet.Tunjangan' table. You can move, or remove it, as needed.
         Me.TunjanganTableAdapter.Fill(Me.DbPenggajianDataSet.Tunjangan)
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet.PenggajianMaster' table. You can move, or remove it, as needed.
         Me.PenggajianMasterTableAdapter.Fill(Me.DbPenggajianDataSet.PenggajianMaster)
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet2.GridKewajibanPotongan' table. You can move, or remove it, as needed.
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet1.GridKaryawan' table. You can move, or remove it, as needed.
-        Me.GridKaryawanTableAdapter.Fill(Me.DbPenggajianDataSet.GridKaryawan)
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet.PenggajianMaster' table. You can move, or remove it, as needed.
         Me.PenggajianMasterTableAdapter.Fill(Me.DbPenggajianDataSet.PenggajianMaster)
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet.gridHakTunjangan' table. You can move, or remove it, as needed.
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet.Potongan' table. You can move, or remove it, as needed.
         Me.PotonganTableAdapter.Fill(Me.DbPenggajianDataSet.Potongan)
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet.TunjanganDetil' table. You can move, or remove it, as needed.
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet.Tunjangan' table. You can move, or remove it, as needed.
         Me.TunjanganTableAdapter.Fill(Me.DbPenggajianDataSet.Tunjangan)
-        'TODO: This line of code loads data into the 'DbPenggajianDataSet.GridKaryawan' table. You can move, or remove it, as needed.
-        Me.GridKaryawanTableAdapter.Fill(Me.DbPenggajianDataSet.GridKaryawan)
+        Me.GridKaryawanTableAdapter.FillByPeriode(Me.DbPenggajianDataSet.GridKaryawan, Label1.Text)
         Dim ds = TunjanganTableAdapter.GetData()
         tanggalPeriode.ShowUpDown = True
         tanggalPeriode.CustomFormat = " MMMM, yyyy"
@@ -251,5 +237,9 @@ Public Class FGaji
             PenggajianMasterTableAdapter.InsertQueryMasterPeriode(0, kode_otomatis, Label1.Text, kr.Rows(i).Item("idKaryawan"))
         Next
         Me.GridKaryawanTableAdapter.FillByPeriode(Me.DbPenggajianDataSet.GridKaryawan, Label1.Text)
+    End Sub
+
+    Private Sub rdPeriode_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rdPeriode.CheckedChanged
+        txtPeriode.Focus()
     End Sub
 End Class
