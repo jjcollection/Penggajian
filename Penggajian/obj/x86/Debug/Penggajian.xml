@@ -18,15 +18,7 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Penggajian.dbPenggajianDataSet.PotonganDetilDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
 </member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganDetilDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -70,15 +62,7 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Penggajian.dbPenggajianDataSet.PotonganDetilRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
 </member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganDetilRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -122,15 +106,7 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Penggajian.dbPenggajianDataSet.PotonganDetilRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
 </member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Penggajian.dbPenggajianDataSet.TunjanganDetilRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -178,15 +154,7 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.PotonganDetilTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
 </member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.TunjanganTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Penggajian.dbPenggajianDataSetTableAdapters.TunjanganDetilTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -258,6 +226,10 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 	<summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Penggajian.My.Resources.Resources.Print_25px">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="T:Penggajian.My.Resources.Resources">
 	<summary>

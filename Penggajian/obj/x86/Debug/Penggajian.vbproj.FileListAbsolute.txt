@@ -41,3 +41,9 @@ C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Pengga
 C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\bin\Debug\Penggajian.pdb
 C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\bin\Debug\Penggajian.xml
 C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.FGaji.resources
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.vbprojResolveAssemblyReference.cache
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.FormSlip.resources
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\RdlCompile.cache
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\RdlCompile.compiled
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.FormReportAllGaji.resources
+C:\Users\Jajang Nurjaman\documents\visual studio 2010\Projects\Penggajian\Penggajian\obj\x86\Debug\Penggajian.FormTunjanganPotongan.resources

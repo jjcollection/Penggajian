@@ -13,19 +13,21 @@ Public Class FGaji
         digit = Microsoft.VisualBasic.Right(tahun, 2)
         tbl = Me.PenggajianMasterTableAdapter.GetDataByDesc
         If tbl.Rows.Count = 0 Then
-            lbidgaji.Text = tgl + digit + "0001"
+            lbidgaji.Text = tgl + digit + "00001"
         Else
             With tbl.Rows(0)
                 lbidgaji.Text = .Item("idPenggajianMaster")
             End With
-            lbidgaji.Text = Val(Microsoft.VisualBasic.Mid(lbidgaji.Text, 5, 4)) + 1
+            lbidgaji.Text = Val(Microsoft.VisualBasic.Mid(lbidgaji.Text, 5, 5)) + 1
             If Len(lbidgaji.Text) = 1 Then
-                lbidgaji.Text = tgl + digit + "000" & lbidgaji.Text & ""
+                lbidgaji.Text = tgl + digit + "0000" & lbidgaji.Text & ""
             ElseIf Len(lbidgaji.Text) = 2 Then
-                lbidgaji.Text = tgl + digit + "00" & lbidgaji.Text & ""
+                lbidgaji.Text = tgl + digit + "000" & lbidgaji.Text & ""
             ElseIf Len(lbidgaji.Text) = 3 Then
-                lbidgaji.Text = tgl + digit + "0" & lbidgaji.Text & ""
+                lbidgaji.Text = tgl + digit + "00" & lbidgaji.Text & ""
             ElseIf Len(lbidgaji.Text) = 4 Then
+                lbidgaji.Text = tgl + digit + "0" & lbidgaji.Text & ""
+            ElseIf Len(lbidgaji.Text) = 5 Then
                 lbidgaji.Text = tgl + digit + lbidgaji.Text
             End If
 
@@ -148,15 +150,16 @@ Public Class FGaji
                 Finally
                     PenggajianMasterTableAdapter.UpdatePotongan(CDbl(jml), GridKaryawanDataGridView.Rows(k).Cells(0).Value, GridKaryawanDataGridView.Rows(k).Cells(1).Value)
                 End Try
-
-               
-
-
             Next
-            '    kode_otomatis()
-            '    GajiMasterTableAdapter.InsertQuery(l, Date.Now, ComboBox1.SelectedValue, CDbl(LBTOTAL.Text), CDbl(LbBonus.Text), CDbl(LbGajiPokok.Text), CDbl(LbTmakan.Text), CDbl(LbTransportasi.Text), txtAbsen.Text, txtSakit.Text, txtMC.Text, txtAplha.Text, txtPinjaman.Text, CDbl(Lbdis.Text))
             MsgBox("data telah disimpan.", MsgBoxStyle.Information, "Informasi")
             Me.GridKaryawanTableAdapter.FillByPeriode(Me.DbPenggajianDataSet.GridKaryawan, Label1.Text)
+            For l As Integer = 0 To GridKaryawanDataGridView.Rows.Count - 1
+                Try
+                    PenggajianMasterTableAdapter.UpdateTotalGaji(CDbl(GridKaryawanDataGridView.Rows(l).Cells(7).Value), GridKaryawanDataGridView.Rows(l).Cells(0).Value)
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
+            Next
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -196,13 +199,23 @@ Public Class FGaji
 
    
     Private Sub GridKaryawanDataGridView_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles GridKaryawanDataGridView.CellClick
+        If e.ColumnIndex = 10 Then
+            ' MsgBox(("Row : " + e.RowIndex.ToString & "  Col : ") + e.ColumnIndex.ToString)
+            FormSlip.ShowDialog()
+      
+        End If
         GridHakTunjanganTableAdapter.FillByKaryawan(DbPenggajianDataSet.gridHakTunjangan, GridKaryawanDataGridView.CurrentRow.Cells(1).FormattedValue)
         GridKewajibanPotonganTableAdapter.FillByKaryawanPotongan(DbPenggajianDataSet.GridKewajibanPotongan, GridKaryawanDataGridView.CurrentRow.Cells(1).FormattedValue)
+
+        GridKaryawanDataGridView.SelectionMode = DataGridViewSelectionMode.CellSelect
         Dim jml = GridHakTunjanganTableAdapter.ScalarTotalTunjangan(GridKaryawanDataGridView.CurrentRow.Cells(1).FormattedValue)
         lbTunjangan.Text = "Total Tunjangan : " & Format(jml, "Currency")
 
         Dim potongan = GridKewajibanPotonganTableAdapter.ScalarTotalPotongan(GridKaryawanDataGridView.CurrentRow.Cells(1).FormattedValue)
         lbPotongan.Text = "Total Potongan : " & Format(potongan, "Currency")
+
+        'GridKaryawanDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        'cariPeriode.Value = GridKaryawanDataGridView.SelectedCells(11).Value
     End Sub
 
     Private Sub GridKaryawanDataGridView_RowPostPaint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewRowPostPaintEventArgs) Handles GridKaryawanDataGridView.RowPostPaint
@@ -229,9 +242,7 @@ Public Class FGaji
 
     End Sub
 
-    Private Sub BtnCari_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCari.Click
-
-    End Sub
+  
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         kode_otomatis_periode()
@@ -244,6 +255,38 @@ Public Class FGaji
     End Sub
 
     Private Sub rdPeriode_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rdPeriode.CheckedChanged
-        txtPeriode.Focus()
+        txtKaryawan.Focus()
+    End Sub
+
+    Private Sub GridKaryawanDataGridView_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GridKaryawanDataGridView.Click
+
+    End Sub
+
+    Private Sub btnCetakSemua_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        ' FormSlip.fillPeriode("8170016")
+        FormSlip.ShowDialog()
+
+    End Sub
+
+    Private Sub All_Click(sender As System.Object, e As System.EventArgs)
+        FormReportAllGaji.ShowDialog()
+    End Sub
+
+    Private Sub BtnCari_Click(sender As System.Object, e As System.EventArgs) Handles BtnCari.Click
+        If rdTanggal.Checked Then
+            Dim dt = GridKaryawanTableAdapter.GetDataByBulanTahun(cariPeriode.Value.Month, cariPeriode.Value.Year)
+            If dt.Rows.Count = 0 Then
+                MsgBox("Data tidak ditemukan", MsgBoxStyle.Information, "Informasi")
+            Else
+                GridKaryawanTableAdapter.FillByBulanTahun(DbPenggajianDataSet.GridKaryawan, cariPeriode.Value.Month, cariPeriode.Value.Year)
+            End If
+        Else
+            Dim dt = GridKaryawanTableAdapter.GetDataByIdKaryawan(txtKaryawan.Text)
+            If dt.Rows.Count = 0 Then
+                MsgBox("Data tidak ditemukan", MsgBoxStyle.Information, "Informasi")
+            Else
+                GridKaryawanTableAdapter.FillByIdKaryawan(DbPenggajianDataSet.GridKaryawan, txtKaryawan.Text)
+            End If
+        End If
     End Sub
 End Class

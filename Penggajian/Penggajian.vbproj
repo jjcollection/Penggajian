@@ -49,10 +49,13 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -82,6 +85,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dbPenggajianDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportAllGaji.Designer.vb">
+      <DependentUpon>FormReportAllGaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportAllGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSlip.Designer.vb">
+      <DependentUpon>FormSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTunjanganPotongan.Designer.vb">
+      <DependentUpon>FormTunjanganPotongan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTunjanganPotongan.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Karyawan.Designer.vb">
       <DependentUpon>Karyawan.vb</DependentUpon>
@@ -133,6 +154,17 @@
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTunjanganPotongan.resx">
+      <DependentUpon>FormTunjanganPotongan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSlip.rdlc" />
+    <EmbeddedResource Include="Copy of ReportSlip.rdlc" />
+    <EmbeddedResource Include="FormReportAllGaji.resx">
+      <DependentUpon>FormReportAllGaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSlip.resx">
+      <DependentUpon>FormSlip.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Karyawan.resx">
       <DependentUpon>Karyawan.vb</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +180,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportAllGaji.rdlc" />
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +210,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_25px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

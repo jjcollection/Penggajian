@@ -155,7 +155,8 @@
             NamakaryawanTextBox.Text = KaryawanDataGridView.SelectedCells(2).Value
             KodebagianComboBox.SelectedValue = KaryawanDataGridView.SelectedCells(1).Value
             TelpTextBox.Text = KaryawanDataGridView.SelectedCells(4).Value
-            AlamatTextBox.Text = KaryawanDataGridView.SelectedCells(5).Value
+            AlamatTextBox.Text = KaryawanDataGridView.SelectedCells(3).Value
+            GajiPokokTextBox.Text = KaryawanDataGridView.SelectedCells(5).Value
 
 
             Dim dt = GridHakTunjanganTableAdapter.GetDataByKaryawan(IdKaryawanTextBox.Text)
@@ -221,5 +222,16 @@
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub GajiPokokTextBox_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles GajiPokokTextBox.MouseClick
+        GajiPokokTextBox.Text = ""
+        GajiPokokTextBox.Focus()
+    End Sub
+
+    Private Sub GajiPokokTextBox_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles GajiPokokTextBox.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button1.Focus()
+        End If
     End Sub
 End Class

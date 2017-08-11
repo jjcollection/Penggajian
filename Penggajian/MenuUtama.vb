@@ -64,7 +64,7 @@ Public Class MenuUtama
 
     Private m_ChildFormNumber As Integer
 
-    Private Sub HitunToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles HitunToolStripMenuItem.Click
+    Private Sub HitunToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs)
         For Each ChildForm As Form In Me.MdiChildren
             ChildForm.Close()
         Next
@@ -130,5 +130,15 @@ Public Class MenuUtama
         FGaji.MdiParent = Me
         FGaji.WindowState = FormWindowState.Maximized
         FGaji.Show()
+    End Sub
+
+    Private Sub TunjanganPotonganToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles TunjanganPotonganToolStripMenuItem.Click
+        For Each ChildForm As Form In Me.MdiChildren
+            ChildForm.Close()
+        Next
+        FormTunjanganPotongan.MdiParent = Me
+        FormTunjanganPotongan.WindowState = FormWindowState.Normal
+        FormTunjanganPotongan.StartPosition = FormStartPosition.CenterScreen
+        FormTunjanganPotongan.Show()
     End Sub
 End Class

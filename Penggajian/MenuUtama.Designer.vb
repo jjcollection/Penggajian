@@ -31,7 +31,6 @@ Partial Class MenuUtama
         Me.DataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KaryawanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProsesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HitunToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DataGajiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TentangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -47,6 +46,7 @@ Partial Class MenuUtama
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.TunjanganPotonganToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -67,57 +67,51 @@ Partial Class MenuUtama
         Me.FileMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
         Me.FileMenu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder
         Me.FileMenu.Name = "FileMenu"
-        Me.FileMenu.Size = New System.Drawing.Size(37, 20)
+        Me.FileMenu.Size = New System.Drawing.Size(39, 21)
         Me.FileMenu.Text = "&File"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(92, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(95, 22)
         Me.ExitToolStripMenuItem.Text = "E&xit"
         '
         'DataToolStripMenuItem
         '
-        Me.DataToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KaryawanToolStripMenuItem})
+        Me.DataToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KaryawanToolStripMenuItem, Me.TunjanganPotonganToolStripMenuItem})
         Me.DataToolStripMenuItem.Name = "DataToolStripMenuItem"
-        Me.DataToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.DataToolStripMenuItem.Size = New System.Drawing.Size(45, 21)
         Me.DataToolStripMenuItem.Text = "Data"
         '
         'KaryawanToolStripMenuItem
         '
         Me.KaryawanToolStripMenuItem.Name = "KaryawanToolStripMenuItem"
-        Me.KaryawanToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.KaryawanToolStripMenuItem.Size = New System.Drawing.Size(212, 22)
         Me.KaryawanToolStripMenuItem.Text = "Karyawan"
         '
         'ProsesToolStripMenuItem
         '
-        Me.ProsesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HitunToolStripMenuItem, Me.DataGajiToolStripMenuItem})
+        Me.ProsesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DataGajiToolStripMenuItem})
         Me.ProsesToolStripMenuItem.Name = "ProsesToolStripMenuItem"
-        Me.ProsesToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.ProsesToolStripMenuItem.Size = New System.Drawing.Size(55, 21)
         Me.ProsesToolStripMenuItem.Text = "Proses"
-        '
-        'HitunToolStripMenuItem
-        '
-        Me.HitunToolStripMenuItem.Name = "HitunToolStripMenuItem"
-        Me.HitunToolStripMenuItem.Size = New System.Drawing.Size(121, 22)
-        Me.HitunToolStripMenuItem.Text = "Hitung"
         '
         'DataGajiToolStripMenuItem
         '
         Me.DataGajiToolStripMenuItem.Name = "DataGajiToolStripMenuItem"
-        Me.DataGajiToolStripMenuItem.Size = New System.Drawing.Size(121, 22)
+        Me.DataGajiToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.DataGajiToolStripMenuItem.Text = "Data Gaji"
         '
         'TentangToolStripMenuItem
         '
         Me.TentangToolStripMenuItem.Name = "TentangToolStripMenuItem"
-        Me.TentangToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
+        Me.TentangToolStripMenuItem.Size = New System.Drawing.Size(63, 21)
         Me.TentangToolStripMenuItem.Text = "Tentang"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(46, 21)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'ToolStrip
@@ -208,6 +202,12 @@ Partial Class MenuUtama
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(39, 17)
         Me.ToolStripStatusLabel.Text = "Status"
         '
+        'TunjanganPotonganToolStripMenuItem
+        '
+        Me.TunjanganPotonganToolStripMenuItem.Name = "TunjanganPotonganToolStripMenuItem"
+        Me.TunjanganPotonganToolStripMenuItem.Size = New System.Drawing.Size(212, 22)
+        Me.TunjanganPotonganToolStripMenuItem.Text = "Tunjangan Dan Potongan"
+        '
         'MenuUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -249,9 +249,9 @@ Partial Class MenuUtama
     Friend WithEvents DataToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents KaryawanToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProsesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents HitunToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TentangToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DataGajiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TunjanganPotonganToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
